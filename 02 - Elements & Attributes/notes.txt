@@ -1,0 +1,116 @@
+🟡 Elements
+
+🟡 What is an Element ?
+
+    An HTML element is defined by a start tag, some content, and an end tag.
+
+    for example:
+    <tagname>Content goes here...</tagname>
+
+🟡 Examples of some HTML elements 
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+    <br>
+    <hr>
+
+🔴Note: Some HTML elements have no content (like the <br> element). 
+        These elements are called empty elements. Empty elements do not have an end tag!
+
+🟡 Nested HTML Elements
+
+    🔘HTML elements can be nested (this means that elements can contain other elements).
+    🔘All HTML documents consist of nested HTML elements.
+    🔘The following example contains four HTML elements (<html>, <body>, <h1> and <p>).
+
+🟡 Empty HTML Elements
+
+    🔘HTML elements with no content are called empty elements.
+    🔘The <br> tag defines a line break, and is an empty element without a closing tag:
+
+🟡 HTML is Not Case Sensitive
+
+    🔘HTML tags are not case sensitive: <P> means the same as <p>.
+
+
+🟡 Attributes
+
+🟡 What is an Attribute ?
+
+    HTML attributes provide additional information about HTML elements.
+
+🟡 HTML Attributes
+    
+    🔘All HTML elements can have attributes
+    🔘Attributes provide additional information about elements
+    🔘Attributes are always specified in the start tag
+    🔘Attributes usually come in name/value pairs like: name="value"
+
+    for example:
+        
+        🟡 href Attribute
+        🎯<a href="https://www.google.com">Visit Google</a>
+        🔘The <a> tag defines a hyperlink. The href attribute specifies 
+            the URL of the page the link goes to Google
+
+        🟡 src Attribute
+        🎯<img src="animal.jpg">
+        🔘The <img> tag is used to embed an image in an HTML page. 
+           The src attribute specifies the path to the image to be displayed
+
+        🟡 Width and Height Attributes
+        🎯<img src="img_girl.jpg" width="500" height="600">
+        🔘The <img> tag should also contain the width and height attributes, 
+            which specify the width and height of the image (in pixels):
+
+        🟡 alt Attribute
+        🎯<img src="img_girl.jpg" alt="Girl with a jacket">
+        🔘The required alt attribute for the <img> tag specifies an 
+           alternate text for an image, if the image for some reason 
+           cannot be displayed. This can be due to a slow connection, 
+           or an error in the src attribute, or if the user uses a screen
+           reader.
+
+        🟡 style Attribute
+        🎯<p style="color:red;">This is a red paragraph.</p>
+        🔘The style attribute is used to add styles to an element, 
+           such as color, font, size, and more.
+
+
+🟡 The lang Attribute
+
+    You should always include the lang attribute inside the <html> tag, 
+    to declare the language of the Web page. This is meant to assist 
+    search engines and browsers.
+
+        for example:
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <body>
+            ...
+            </body>
+            </html>
+
+    Country codes can also be added to the language code in the 
+    lang attribute. So, the first two characters define the language
+    of the HTML page, and the last two characters define the country.
+
+        for example:
+
+            <!DOCTYPE html>
+            <html lang="en-IN">
+            <body>
+            ...
+            </body>
+            </html>
+
+🟡 The title Attribute
+
+    The title attribute defines some extra information about an element.
+    The value of the title attribute will be displayed as a tooltip 
+    when you mouse over the element:
+
+        for example:
+
+            <p title="I'm a tooltip">This is a paragraph.</p>
