@@ -1,0 +1,182 @@
+🟡 What is HTML Links ?
+
+    🔘HTML links are hyperlinks.
+    🔘You can click on a link and jump to another document.
+    🔘When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+    🔴Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+🟡 HTML Links - Syntax
+
+    For example:
+
+        <a href="url">link text</a>
+
+        🔘The most important attribute of the <a> element is the href 
+            attribute, which indicates the link's destination.
+        🔘The link text is the part that will be visible to the reader.
+        🔘Clicking on the link text, will send the reader to the specified URL address.
+
+        <a href="https://www.amazon.in/">Visit Amazon India!</a>
+
+🟡 HTML Links - The target Attribute
+
+    🔘By default, the linked page will be displayed in the current browser 
+        window. To change this, you must specify another target for the link.
+    🔘The target attribute specifies where to open the linked document.
+    🔘The target attribute can have one of the following values:
+
+        _self - Default. Opens the document in the same window/tab as it was clicked
+        _blank - Opens the document in a new window or tab
+        _parent - Opens the document in the parent frame
+        _top - Opens the document in the full body of the window
+
+            For example:
+
+                <a href="https://www.amazon.in/" target="_blank">Visit Amazon India!</a>
+
+🟡 Absolute URLs vs. Relative URLs
+
+    🔘Both examples above are using an absolute URL (a full web address) in the href attribute.
+    🔘A local link (a link to a page within the same website) is 
+        specified with a relative URL (without the "https://www" part):
+
+        For example:
+
+            <h2>Absolute URLs</h2>
+            <p><a href="https://www.amazon.in/">Amazon</a></p>
+            <p><a href="https://www.google.com/">Google</a></p>
+
+            <h2>Relative URLs</h2>
+            <p><a href="html_images.asp">HTML Images</a></p>
+            <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+🟡 HTML Links - Use an Image as a Link
+
+    To use an image as a link, just put the <img> tag inside the <a> tag:
+
+        For example:
+
+            <a href="default.asp">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+            </a>
+
+🟡 Link to an Email Address
+
+    Use mailto: inside the href attribute to create a link that opens 
+    the user's email program (to let them send a new email):
+
+        For example:
+
+            <a href="mailto:someone@example.com">Send email</a>
+
+🟡 Button as a Link
+
+    🔘To use an HTML button as a link, you have to add some JavaScript code.
+    🔘JavaScript allows you to specify what happens at certain events, such as a click of a button:
+
+        For example:
+
+            <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+🟡 Link Titles
+
+    The title attribute specifies extra information about an element. 
+    The information is most often shown as a tooltip text when the mouse moves over the element.
+
+        For example:    
+
+            <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+🟡 Link Tag 
+
+    🔘The <link> tag defines the relationship between the current document and an external resource.
+    🔘The <link> tag is most often used to link to external style sheets or to add a favicon to your website.
+    🔘The <link> element is an empty element, it contains attributes only.
+
+        For example: 
+
+            <head>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+
+🟡 What is HTML Images ?
+
+    🔘Images can improve the design and the appearance of a web page.
+    🔘The HTML <img> tag is used to embed an image in a web page.
+    🔘Images are not technically inserted into a web page; images are 
+        linked to web pages. The <img> tag creates a holding space for 
+        the referenced image.
+    🔘The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+    🔘The <img> tag has two required attributes:
+
+    src - Specifies the path to the image
+    alt - Specifies an alternate text for the image 
+
+        For example:
+
+            <img src="url" alt="alternatetext">
+
+🟡 The src Attribute
+
+    🔘The required src attribute specifies the path (URL) to the image.
+    🔴Note: When a web page loads, it is the browser, at that moment, 
+        that gets the image from a web server and inserts it into the page.
+        Therefore, make sure that the image actually stays in the same spot
+        in relation to the web page, otherwise your visitors will get a 
+        broken link icon. The broken link icon and the alt text are shown 
+        if the browser cannot find the image.
+
+        For example:
+
+            <img src="img_chania.jpg" alt="">
+
+🟡 The alt Attribute
+
+    🔘The required alt attribute provides an alternate text for an image, 
+        if the user for some reason cannot view it (because of slow 
+        connection, an error in the src attribute, or if the user uses 
+        a screen reader).
+    🔘The value of the alt attribute should describe the image: 
+
+        For example:
+
+            <img src="img_chania.jpg" alt="Flowers in Chania">
+
+🟡 Images in Another Folder
+    
+    🔘If you have your images in a sub-folder, you must include the folder name in the src attribute:   
+
+        For example:
+
+            <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+🟡 Animated Images
+    
+    HTML allows animated GIFs:
+
+        For example:
+
+            <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+🟡 Image as a Link
+
+    To use an image as a link, put the <img> tag inside the <a> tag:
+
+        For example:
+
+            <a href="default.asp">
+                <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+            </a>
+
+🟡 Image Floating
+    
+    Use the CSS float property to let the image float to the right or to the left of a text:
+
+        For example:
+
+            <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+            The image will float to the right of the text.</p>
+
+            <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+            The image will float to the left of the text.</p>
