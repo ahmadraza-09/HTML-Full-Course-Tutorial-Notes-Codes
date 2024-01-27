@@ -1,0 +1,41 @@
+🟡 What is HTML Favicon ?
+
+    A favicon is a small image displayed next to the page title in the browser tab.
+
+🟡 How To Add a Favicon in HTML
+
+     add a <link> element to your "index.html" file, after the <title> element, like this:
+
+        For example:
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <title>My Page Title</title>
+            <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+            </head>
+            <body>
+
+            <h1>This is a Heading</h1>
+            <p>This is a paragraph.</p>
+
+            </body>
+            </html>
+
+🟡 What is HTML Page Title ?
+
+    Every web page should have a page title to describe the meaning of the page.
+
+    For example:
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>HTML Tutorial</title>
+        </head>
+        <body>
+
+        The content of the document......
+
+        </body>
+        </html>
