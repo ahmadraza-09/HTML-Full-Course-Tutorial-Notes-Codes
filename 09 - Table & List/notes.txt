@@ -1,0 +1,142 @@
+🟡 What is HTML Tables ?
+
+    HTML tables allow web developers to arrange data into rows and columns.
+
+        Company	                        Contact	            Country
+        Alfreds Futterkiste	            Maria Anders	    Germany
+        Centro comercial                Moctezuma	        Francisco Chang	Mexico
+        Ernst Handel	                Roland Mendel	    Austria
+        Island Trading	                Helen Bennett	    UK
+        Laughing Bacchus Winecellars	Yoshi Tannamuri	    Canada
+        Magazzini Alimentari Riuniti	Giovanni Rovelli    Italy
+
+🟡 Define an HTML Table
+    
+    A table in HTML consists of table cells inside rows and columns.
+
+        For example:
+
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+            </table>
+
+🟡 Table Cells
+
+    Each table cell is defined by a <td> and a </td> tag.
+    td stand for Table Data
+
+🔴 Note: A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+
+🟡 Table Rows
+
+    Each table row starts with a <tr> and ends with a </tr> tag.
+    tr stands for table row.
+
+        For example:    
+
+            <table>
+                <tr>
+                    <td>Emil</td>
+                    <td>Tobias</td>
+                    <td>Linus</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>14</td>
+                    <td>10</td>
+                </tr>
+            </table>
+
+🟡 Table Headers
+
+    Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
+    th stands for table header.
+
+        For example:
+
+            <table>
+                <tr>
+                    <th>Person 1</th>
+                    <th>Person 2</th>
+                    <th>Person 3</th>
+                </tr>
+                <tr>
+                    <td>Emil</td>
+                    <td>Tobias</td>
+                    <td>Linus</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>14</td>
+                    <td>10</td>
+                </tr>
+            </table>
+
+🟡 What is HTML Lists ?
+
+    HTML lists allow web developers to group a set of related items in lists.
+
+        For example:
+
+            An unordered HTML list:         An ordered HTML list:
+
+            🔘Item                            1.First item
+            🔘Item                            2.Second item
+            🔘Item                            3.Third item
+            🔘Item                            4.Fourth item
+
+
+🟡 Unordered HTML List
+
+    An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+    The list items will be marked with bullets (small black circles) by default:
+
+    For example:
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+🟡  Ordered HTML List
+
+    An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+    The list items will be marked with numbers by default:
+
+    For example:
+
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+🟡 HTML Description Lists
+
+    HTML also supports description lists.
+    A description list is a list of terms, with a description of each term.
+    The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+
+    For example:
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>

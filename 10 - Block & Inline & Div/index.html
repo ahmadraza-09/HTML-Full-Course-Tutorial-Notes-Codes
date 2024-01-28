@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Block & Inline & Div</title>
+    <style>
+
+        div {
+            display: inline-block;
+        }
+
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .container div {
+            width:33%;
+        }
+    </style>
+</head>
+<body>
+    <p style="border: 2px solid #000">Hello <span style="color: red;">World</span></p>
+    <div style="border: 2px solid #000">Hello World</div>
+
+    <span>Hello</span>
+
+    <div class="container" style="border: 2px solid #000;">
+        <div style="border: 2px solid #000; height: 50px; width: 50px;"></div>
+        <h2>Grocery</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+    <br>
+    <div style="border: 2px solid #000; width: 200px;">
+        <div style="border: 2px solid #000; height: 50px; width: 50px;"></div>
+        <h2>Stationary</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+</body>
+</html>
