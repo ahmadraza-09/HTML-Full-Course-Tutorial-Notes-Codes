@@ -1,0 +1,145 @@
+🟡 What is HTML Iframes ?
+
+    An HTML iframe is used to display a web page within a web page.
+
+🟡 HTML Iframe Syntax
+
+    🔘The HTML <iframe> tag specifies an inline frame.
+    🔘An inline frame is used to embed another document within the current HTML document.
+
+        For example:
+
+            <iframe src="url" title="Deal Share"></iframe>
+        
+        🔴 Tip: It is a good practice to always include a title attribute 
+        for the <iframe>. This is used by screen readers to read out what 
+        the content of the iframe is.
+
+🟡 Iframe - Set Height and Width
+
+    🔘Use the height and width attributes to specify the size of the iframe.
+    🔘The height and width are specified in pixels by default:
+
+        For example:
+
+            <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+🟡 Iframe - Remove the Border
+
+    🔘By default, an iframe has a border around it.
+    🔘To remove the border, add the style attribute and use the CSS border property:
+
+    For example:    
+
+        <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+🟡 Iframe - Target for a Link
+
+    🔘An iframe can be used as the target frame for a link.
+    🔘The target attribute of the link must refer to the name attribute of the iframe:
+
+    For example:
+
+        <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+        <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+🟡 HTML - The Head Element
+
+    The HTML <head> element is a container for the following elements: 
+    <title>, <style>, <meta>, <link>, <script>, and <base>.
+
+🟡 The HTML <head> Element
+
+    🔘The <head> element is a container for metadata (data about data) 
+    and is placed between the <html> tag and the <body> tag.
+    🔘HTML metadata is data about the HTML document. Metadata is not displayed.
+    🔘Metadata typically define the document title, character set, styles, 
+    scripts, and other meta information.
+
+🟡 The HTML <title> Element
+
+    The <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.
+    The <title> element is required in HTML documents!
+    The content of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.
+    
+    The <title> element:
+    defines a title in the browser toolbar
+    provides a title for the page when it is added to favorites
+    displays a title for the page in search engine-results
+    So, try to make the title as accurate and meaningful as possible!
+
+    A simple HTML document:
+
+    For example:
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>A Meaningful Page Title</title>
+        </head>
+        <body>
+
+        The content of the document......
+
+        </body>
+        </html>
+
+🟡 The HTML <style> Element
+
+    The <style> element is used to define style information for a single HTML page:
+
+    For example:
+
+        <style>
+            body {background-color: powderblue;}
+            h1 {color: red;}
+            p {color: blue;}
+        </style>
+
+🟡 The HTML <link> Element
+
+    🔘The <link> element defines the relationship between the current document and an external resource.
+    🔘The <link> tag is most often used to link to external style sheets:
+    
+    For example:
+
+        <link rel="stylesheet" href="mystyle.css">
+
+🟡 The HTML <meta> Element
+
+    🔘The <meta> element is typically used to specify the character set, 
+    page description, keywords, author of the document, and viewport settings.
+    🔘The metadata will not be displayed on the page, but is used by 
+    browsers (how to display content or reload page), by search engines 
+    (keywords), and other web services.
+
+    For example:
+
+        🔘Define the character set used:
+        <meta charset="UTF-8">
+
+        🔘Define keywords for search engines:
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+
+        🔘Define a description of your web page:
+        <meta name="description" content="Free Web tutorials">
+
+        🔘Define the author of a page:
+        <meta name="author" content="John Doe">
+
+        🔘Refresh document every 30 seconds:
+        <meta http-equiv="refresh" content="30">
+
+        🔘Setting the viewport to make your website look good on all devices:
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+🟡 Setting The Viewport
+
+    🔘The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+    🔘You should include the following <meta> element in all your web pages:
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    🔘This gives the browser instructions on how to control the page's dimensions and scaling.
+    🔘The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+    🔘The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
