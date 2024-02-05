@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Attributes & Elements</title>
+</head>
+<body>
+    <form action="../15 - HTML Forms/data.html" method="post" autocomplete="on">
+        <label for="username">Username</label><br>
+        <input type="text" name="username"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <label for="cars">Choose a car:</label>
+    <select multiple>
+        <option value="Select">Select</option>
+        <option value="Select">BMW</option>
+        <option value="Select">Audi</option>
+        <option value="Select">Fortuner</option>
+        <option value="Select">Swift</option>
+    </select>
+
+    <textarea name="message" rows="0" cols="0">
+        Send message
+    </textarea>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Login Form:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+</body>
+</html>
